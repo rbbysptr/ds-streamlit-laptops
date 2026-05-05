@@ -49,8 +49,8 @@ filtered_df = df[
 
 st.sidebar.write(f"Jumlah produk setelah filter: {len(filtered_df)}")
 
-# 1. Pemahaman Awal Dataset
-st.header("1. Pemahaman Awal Dataset")
+# 1. Dataset
+st.header("1. Dataset")
 st.write("Dataset ini berisi informasi tentang laptop yang dijual di platform E-Commerce (Flipkart), termasuk spesifikasi teknis, harga, dan ulasan pelanggan.")
 st.write(f"Jumlah baris: {filtered_df.shape[0]}")
 st.write(f"Jumlah kolom: {filtered_df.shape[1]}")
