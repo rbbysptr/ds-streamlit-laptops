@@ -69,12 +69,11 @@ st.write("- **no_of_ratings**: Jumlah rating")
 st.write("- **no_of_reviews**: Jumlah ulasan")
 
 st.subheader("Preview Data:")
-st.dataframe(filtered_df.head())
+st.dataframe(filtered_df.head(10))
 
-st.subheader("Tipe Data dan Missing Values:")
+st.subheader("Tipe Data :")
 st.write(filtered_df.dtypes)
-st.write("Missing Values:")
-st.write(filtered_df.isnull().sum())
+
 
 # 2. Preprocessing Data
 st.header("2. Preprocessing Data")
