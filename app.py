@@ -80,7 +80,7 @@ st.header("2. Preprocessing Data")
 st.write("Preprocessing telah dilakukan: handling missing values, ekstraksi fitur processor_brand, ram_gb, storage_type, storage_gb.")
 
 st.subheader("Data Setelah Preprocessing:")
-st.dataframe(df.head())
+st.dataframe(df.head(10))
 
 # 3. Exploratory Data Analysis (EDA)
 st.header("3. Exploratory Data Analysis")
