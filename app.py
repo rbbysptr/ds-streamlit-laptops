@@ -97,6 +97,11 @@ with col2:
 with col3:
     st.metric("Total Produk", len(filtered_df))
 
+# Distribusi OS
+st.subheader("Distribusi Sistem Operasi:")
+os_counts = filtered_df['os'].value_counts()
+st.bar_chart(os_counts)
+
 # Distribusi harga
 st.subheader("Distribusi Processor Brand:")
 processor_counts = filtered_df['processor_brand'].value_counts()
