@@ -39,7 +39,7 @@ st.sidebar.subheader("Filter Rentang Rating")
 min_rating, max_rating = 0.0, 5.0
 rating_range = st.sidebar.slider("Rating:", min_value=min_rating, max_value=max_rating, value=(min_rating, max_rating))
 
-# Apply filters
+# filtering
 filtered_df = df[
     (df["processor_brand"].isin(processor_brands) if processor_brands else True) &
     (df["os"].isin(operating_systems) if operating_systems else True) &
